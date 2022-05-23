@@ -16,6 +16,12 @@ webui: "http://[HOST]:[PORT:9981]/"
 devices:
   - /dev/dvb
   - /dev/dri
+hassio_role: admin
+hassio_api: true
+privileged:
+  - NET_ADMIN
+  - SYS_ADMIN
+  - SYS_RAWIO
 ports:
   9981/tcp: 9981
   9982/tcp: 9982
